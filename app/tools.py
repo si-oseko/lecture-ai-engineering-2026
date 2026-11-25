@@ -31,10 +31,9 @@ def _names(entry: dict) -> list[str]:
 
 
 def search_glossary(query: str) -> str:
-    """講座の用語集から用語を検索し、定義と、どの回で扱うかを返す。
+    """AIE2026の用語を検索する。
 
-    AIエンジニアリングの用語や、この講座（AIE2026）に固有の言葉について
-    答える前に使うこと。query には調べたい用語を1つだけ入れる（例: "LoRA"）。
+    宿題の「3レベル」の質問には query に「3レベル」を指定して使う。
     """
     q = _normalize(query)
     if not q:
